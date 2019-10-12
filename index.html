@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search-page-prototype</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+<!-- FLOATING HEADER TOP FRAME SCRIPT -->
+
+    <header>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script type="text/javascript">
+        jQuery(function(f){
+          var element = f('#top-frame');
+          f(window).scroll(function(){
+              element['fade'+ (f(this).scrollTop() > 200 ? 'In': 'Out')](500);
+          });
+       });
+      </script>
+      <div id="top-frame">
+        <div class="inner clearfix">
+          <div id="logo"><a href="#"><img src="img/logo.png" title="Skynet" alt="Skynet"></a></div>
+          <div id="search-box">
+            <form>
+              <input class="find" name="Search" type="text" title="Search" value="build this webpage">
+            </form>
+            <div class="panel">
+              <div id="keyb"><a href="#" class="tip top" data-title="Hello World !"><img src="img/t3.png"></a></div>
+              <div id="mic"><a href="#" class="tip top" data-title="One more stuff..."><img src="img/t4.png"></a></div>
+              <div id="srch"><a href="#"><img src="img/t5.png"></a></div>
+            </div>
+          </div>
+          <div class="access">
+            <div id="apps"><a href="#" class="point"><img src="img/t1.png"></a></div>
+            <div id="account"><a href="#"><img src="img/T.png" title="I'll be back ..." alt="Terminator" class="round"></a></div>
+          </div>
+        </div>
+      </div>
+
+<!-- HEADER -->
+
+      <div id="pin">
+        <div class="inner clearfix">
+          <div id="logo"><a href="#"><img src="img/logo.png" title="Skynet" alt="Skynet"></a></div>
+          <div id="search-box">
+            <form>
+              <input class="find" name="Search" type="text" title="Search" value="build this webpage">
+            </form>
+            <div class="panel">
+              <div id="keyb"><a href="#" class="tip top" data-title="Hello World !"><img src="img/t3.png"></a></div>
+              <div id="mic"><a href="#" class="tip top" data-title="One more stuff..."><img src="img/t4.png"></a></div>
+              <div id="srch"><a href="#"><img src="img/t5.png"></a></div>
+            </div>
+          </div>
+          <div class="access">
+            <div id="apps"><a href="#" class="point"><img src="img/t1.png"></a></div>
+            <div id="account"><a href="#"><img src="img/T.png" title="I'll be back ..." alt="Terminator" class="round"></a></div>
+          </div>
+        </div>
+        <div class="navmenu clearfix">
+          <input type="radio" name="nav" checked="checked" id="v1"/>
+          <label for="v1">All</label>
+          <input type="radio" name="nav" id="v2"/>
+          <label for="v2">Videos</label>
+          <input type="radio" name="nav" id="v3"/>
+          <label for="v3">News</label>
+          <input type="radio" name="nav" id="v4"/>
+          <label for="v4">Images</label>
+          <input type="radio" name="nav" id="v5"/>
+          <label for="v5">Maps</label>
+          <input type="radio" name="nav" id="v6"/>
+          <label for="v6">More</label>
+          <input type="radio" name="nav" id="v7"/>
+          <label for="v7">Settings</label>
+          <input type="radio" name="nav" id="v8"/>
+          <label for="v8" class="tools">Tools</label>
+        </div>
+      </div>
+    </header>
+
+<!-- MAIN SECTION -->
+
+    <div id="wrap">
+      <div class="content">
+        <div id="result">
+          <p>About 155,000,000 results (0.47 seconds)</p>
+        </div>
+        <div class="rem">
+          <div id="rm"><img src="img/rm.png"><p>A privacy reminder from SkyNet</p></div>
+          <div id="bn">
+            <p id="bn1">REMIND ME LATER</p>
+            <p id="bn2">REVIEW</p>
+          </div>
+        </div>
+        <div class="l-title" href="#">
+          <p id="l-capt">Boston Dynamics is changing you idea of what robots can do ...</p>
+          <div id="l-link"><p id="lg">https://www.bostondynamics.com/<div id="td"></div></p></div>
+        </div>
+        <div class="c-cont">
+           <p id="c-capt">The World's Most Dynamic Humanoid. Learn more · Takes a Kicking and Keeps on ... a Kicking and Keeps on Ticking. Learn more. © 2019 <strong>Boston Dynamics</strong>.</p>
+           <div id="c-link" href="#">
+             <div class="ch">BigDog</div><div class="dt"> · </div><div class="ch">‎WildCat</div><div class="dt"> · </div><div class="ch">Spot</div><div class="dt"> · </div><div class="ch">‎Robots</div>
+           </div>
+        </div>
+        <div class="vi">
+          <p id="vd">Videos</p>
+          <div class="mv">
+            <div id="mv1">
+              <div id="t-mv"><img src="img/mv1.png">
+                <div id="vcp" class="l-title"><p>Parkour Atlas</p></div>
+              </div>
+              <div id="mcp" class="c-cont"><p>BostonDynamics</p>
+                <p><span id="sn">SkyNet</span> - Oct 11, 2088</p></div>
+            </div>
+            <div id="mv2">
+              <div id="t-mv"><img src="img/mv2.png">
+                <div id="vcp" class="l-title"><p>UpTown Spot</p></div>
+              </div>
+              <div id="mcp" class="c-cont"><p>BostonDynamics</p>
+                <p><span id="sn">SkyNet</span> - Oct 16, 2088</p></div>
+            </div>
+            <div id="mv3">
+              <div id="t-mv"><img src="img/mv3.png">
+                <div id="vcp" class="l-title"><p>Boston Dynamics' Atlas Robot Can Do Parkour</p></div>
+              </div>
+              <div id="mcp" class="c-cont"><p>CNBC</p>
+                <p><span id="sn">SkyNet</span> - Oct 11, 2088</p></div>
+            </div>
+          </div>
+          <div id="ov" class="rd2">
+            <div id="in" class="ar2"></div>
+          </div>
+        </div>
+        <div class="l-title" href="#">
+          <p id="l-capt">BostonDynamics - YouTube</p>
+          <div id="l-link"><p id="lg">https://www.youtube.com/user/BostonDynamics<div id="td"></div></p></div>
+        </div>
+        <div class="c-cont">
+           <p id="c-capt">Our mission is to build the most advanced robots on Earth, with remarkable mobility, agility, dexterity and speed. For more information about <strong>Boston Dynamics...</strong></p>
+        </div>
+        <div class="l-title" href="#">
+          <p id="l-capt">Boston Dynamics - Wikipedia</p>
+          <div id="l-link"><p id="lg">https://en.wikipedia.org/wiki/Boston_Dynamics<div id="td"></div></p></div>
+        </div>
+        <div class="c-cont">
+           <p id="c-capt"><strong>Boston Dynamics</strong> is an American engineering and robotics design company founded in 1992 as a spin-off from the Massachusetts Institute of Technology.</p>
+           <div class="ct">
+             <div id="icp">
+               <div id="c-capt"><strong>Industry‎:</strong> Robotics</div><div id="c-capt"><strong>Owner‎: </strong><span class="ch">SoftBank Group‎</span> (2017-), ‎<span class="ch">X (company)</span>‎ ...</div>‎
+             </div>
+             <div id="fcp">
+               <div id="c-capt"><strong>Founder‎:</strong>‎ Marc Raibert</div><div id="c-capt"><strong>Parent‎: </strong><span class="ch">SoftBank</span></div>
+             </div>
+           </div>
+           <div id="c-link" href="#">
+             <div class="ch">Robotics at Boston Dynamics</div><div class="dt"> · </div><div class="ch">‎Marc Raibert</div><div class="dt"> · </div><div class="ch">‎BigDog</div><div class="dt"> · </div><div class="ch">‎Atlas (robot)</div>
+           </div>
+        </div>
+        <div class="c-table">
+          <div id="ct-1"><p id="vd">People also ask</p></div>
+          <div id="ct-2">Does SkyNet Own Boston Dynamics?<div id="arr1"></div></div>
+          <div id="ct-3">What are Boston Dynamics robots used for?<div id="arr2"></div></div>
+          <div id="ct-4">What does Boston Dynamics pay?<div id="arr3"></div></div>
+          <div id="ct-5">Where is Boston Dynamics located?<div id="arr4"></div></div>
+        </div>
+        <div id="ncp">Feedback</div>
+        <div class="l-title" href="#">
+          <p id="l-capt">Boston Dynamics (@BostonDynamics) | Twitter</p>
+          <div id="l-link"><p id="lg">https://twitter.com/bostondynamics?lang=en<div id="td"></div></p></div>
+        </div>
+        <div class="c-cont">
+           <p id="c-capt">The latest Tweets from <strong>Boston Dynamics (@BostonDynamics): "Boston Dynamics</strong> - Machine Learning Summer Internship https://t.co/fNvv5RK9Ux via ...</p>
+        </div>
+        <div class="l-title" href="#">
+          <p id="l-capt">The truth behind Boston Dynamics' viral robot videos | New Scientist</p>
+          <div id="l-link"><p id="lg">https://www.newscientist.com/.../mg24132150-200-the-truth-behind-boston-dynamics...<div id="td"></div></p></div>
+        </div>
+        <div class="c-cont">
+           <p id="c-capt"><span id="scp">Jan 30, 2019</span> - <strong>Boston Dynamics</strong> builds robots that can open doors, dance and do parkour. The machine age is stepping up a gear, but first the bots need ...</p>
+        </div>
+        <div class="l-title" href="#">
+          <p id="l-capt">You're Expecting Too Much Out of Boston Dynamics' Robots | WIRED</p>
+          <div id="l-link"><p id="lg">https://www.wired.com/story/boston-dynamics-spotmini-running-man/<div id="td"></div></p></div>
+        </div>
+        <div class="c-cont">
+           <p id="c-capt"><span id="scp">Oct 15, 2018</span> - <strong>Boston Dynamics</strong> CEO Marc Raibert doesn't know exactly how people will use robots like the SpotMini. But at least it can do the running man.</p>
+        </div>
+        <div class="l-title" href="#">
+          <p id="l-capt">Watch Boston Dynamics' Humanoid Robot Do Parkour | WIRED</p>
+          <div id="l-link"><p id="lg">https://www.wired.com/story/watch-boston-dynamics-humanoid-robot-do-parkour/<div id="td"></div></p></div>
+        </div>
+        <div class="c-cont">
+           <p id="c-capt"><span id="scp">Oct 11, 2018</span> - <strong>Boston Dynamics'</strong> Atlas humanoid robot can do a lot of things I can't, including backflips and running through snow without falling on its face.</p>
+        </div>
+        <div class="l-title" href="#">
+          <p id="l-capt">Boston Dynamics' four-legged robot can now do the Running Man ...</p>
+          <div id="l-link"><p id="lg">https://www.theverge.com/.../dancing-robot-boston-dynamics-video-spotmini-uptown-f...</p></div>
+        </div>
+        <div id="imc" class="c-cont">
+           <img src="img/bd0.png">
+           <div><p id="scp">Oct 16, 2018 - Uploaded by BostonDynamics</p><p id="c-capt"><strong>Boston Dynamics</strong> has a new video of its impressive quadruped robot SpotMini. This time, it's dancing to ...</p>
+           </div>
+        </div>
+        <div class="l-title" href="#">
+          <p id="l-capt">Images for boston dynamics</p>
+        </div>
+        <div id="i-src" class="l-title" href="#">
+          <img src="img/bd1.png">
+          <img src="img/bd2.png">
+          <img src="img/bd3.png">
+          <img src="img/bd4.png">
+          <img src="img/bd5.png">
+          <div id="ov2" class="rd2">
+            <div id="in" class="ar2"></div>
+          </div>
+        </div>
+        <div class="ct c-cont">
+          <div id="icp">
+            <div class="ch"><p><div class="ar3"></div><span id="chs">More images for boston dynamics‎</span></p></div>‎
+          </div>
+          <div id="fcp">
+            <div id="rcp">Report images</div>
+          </div>
+        </div>
+        <div id="dv">
+          <p id="vd">Searches related to boston dynamics</p>
+        </div>
+        <div class="rl l-title" href="#">
+          <div id="b">
+            <p id="bd1">boston dynamics <strong>atlas</strong></p>
+            <p id="bd2">boston dynamics <strong>internship</strong></p>
+            <p id="bd3">boston dynamics <strong>instagram</strong><p>
+            <p id="bd4">boston dynamics <strong>backflip</strong></p>
+          </div>
+          <div id="d">
+            <p id="bd5">boston dynamics <strong>robot dog</strong></p>
+            <p id="bd6">boston dynamics <strong>spotmini</strong></p>
+            <p id="bd7">boston dynamics <strong>christmas</strong><p>
+            <p id="bd8">boston dynamics <strong>stok</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="content-r">
+        <div id="ctr1">
+          <div class="s1">
+            <div>
+              <p id="b-cp">Boston Dynamics</p>
+              <p id="scp2" class="c-cont">Robotics company</p>
+            </div>
+            <div id="lim">
+              <img src="img/pn.png">
+            </div>
+            <div id="lim2">
+              <img src="img/bd_logo.png">
+            </div>
+          </div>
+          <div class="s2 ch">
+            <img src="img/bd.png"><div id="scb">bostondynamics.com</div>
+          </div>
+          <div class="s3">
+            <div id="kl">
+              <div id="c-capt">Boston Dynamics is an American engineering and robotics design company founded in 1992 as a spin-off from the Massachusetts Institute of Technology. Headquartered in Waltham, Massachusetts, Boston Dynamics is a wholly owned subsidiary of the Japanese conglomerate SoftBank Group. <span class="ch">Wikipedia‎</span></div>
+              <div id="kl-a">
+                <div id="c-capt"><strong class="ch-g">Headquarters</strong><strong>: </strong><span class="ch">Waltham, Massachusetts, United States</span></div>
+                <div id="c-capt"><strong class="ch-g">Founder</strong><strong>: </strong><span class="ch">Marc Raibert</span></div>
+                <div id="c-capt"><strong class="ch-g">Founded</strong><strong>: </strong><span>1992</span></div>
+                <div id="c-capt"><strong class="ch-g">Acquisition date</strong><strong>: </strong><span>2017</span></div>
+                <div id="c-capt"><strong class="ch-g">Parent organizations</strong><strong>: </strong><span class="ch">X</span><span> (2013–2017), </span><span class="ch">SoftBank Group</span><span> (2017–)</span></div>
+                <div id="c-capt"><strong class="ch-g">Subsidiary</strong><strong>: </strong><span class="ch">Kinema Systems Inc.</span></div>
+              </div>
+              <div id="kl-b"><p id="vd">Profiles</p></div>
+              <div class="mv">
+                <div id="vd1">
+                  <div id="t-mv"><img src="img/tb.png">
+                    <div id="vcc" class="v-title"><p>Twitter</p></div>
+                  </div>
+                </div>
+                <div id="vd2">
+                  <div id="t-mv"><img src="img/yb.png">
+                    <div id="vcc" class="v-title"><p id="v1n">YouTube</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="llc">
+                <p id="c-capt"><span class="ch-g"  id="vd">People also search for‎‎</span></p>
+                <p id="c2"><span id="c1">View 15+ more‎</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="s4">
+            <div class="mv">
+              <div id="vd-i">
+                <div id="t-mv"><img src="img/v1.png">
+                  <div id="vcc" class="v-title"><p>SoftBank Group</p></div>
+                </div>
+              </div>
+              <div id="vd-i">
+                <div id="t-mv"><img src="img/v2.png">
+                  <div id="vcc" class="v-title"><p>iRobot</p></div>
+                </div>
+              </div>
+              <div id="vd-i">
+                <div id="t-mv"><img src="img/v3.png">
+                  <div id="vcc" class="v-title"><p>DeepMind Technolo...</p></div>
+                </div>
+              </div>
+              <div id="vd-i">
+                <div id="t-mv"><img src="img/v4.png">
+                  <div id="vcc" class="v-title"><p>Arm Holdings</p></div>
+                </div>
+              </div>
+              <div id="vd-i">
+                <div id="t-mv"><img src="img/v5.png">
+                  <div id="vcc" class="v-title"><p>Massach... Institute of Technology</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="kl-c">
+          <div class="llc">
+            <p><span id="c1">Disclaimer</span></p>
+            <div id="c2">Feedback</div>
+          </div>
+        </div>
+        <div id="box-p">
+          <div id="p-im"><img src="img/sk.png"><p id="c-capt">Claim this knowledge panel</p></div>
+        </div>
+      </div>
+    </div>           <!-- MAIN SECTION CLOSED -->
+
+<!-- PAGINATION -->
+
+    <div class="next">
+      <div class="a"><input type="image" src="img/i1.png" id="z1"/>
+      <label class="a1" for="z1">1</label></div>
+      <div class="b"><input type="image" src="img/i2.png" id="z2" onclick="chg(this.id)"/>
+      <label class="b1" for="z2">2</label></div>
+      <div class="c"><input type="image" src="img/i2.png" id="z3" onclick="chg(this.id)"/>
+      <label class="c1" for="z3">3</label></div>
+      <div class="d"><input type="image" src="img/i2.png" id="z4" onclick="chg(this.id)"/>
+      <label class="d1" for="z4">4</label></div>
+      <div class="e"><input type="image" src="img/i2.png" id="z5" onclick="chg(this.id)"/>
+      <label class="e1" for="z5">5</label></div>
+      <div class="f"><input type="image" src="img/i2.png" id="z6" onclick="chg(this.id)"/>
+      <label class="f1" for="z6">6</label></div>
+      <div class="g"><input type="image" src="img/i2.png" id="z7" onclick="chg(this.id)"/>
+      <label class="g1" for="z7">7</label></div>
+      <div class="h"><input type="image" src="img/i2.png" id="z8" onclick="chg(this.id)"/>
+      <label class="h1" for="z8">8</label></div>
+      <div class="i"><input type="image" src="img/i2.png" id="z9" onclick="chg(this.id)"/>
+      <label class="i1" for="z9">9</label></div>
+      <div class="j"><input type="image" src="img/i2.png" id="z0" onclick="chg(this.id)"/>
+      <label class="j1" for="z0">10</label></div>
+      <div class="k"><input type="image" src="img/i3.png" id="zl"/>
+      <label class="k1" for="zl">Next</label><a href="#" class="arrow"></a></div>
+    </div>
+
+<!-- CHANGE IMG SCRIPT -->
+
+    <script>
+      function chg(id) {
+        if (document.getElementById(id).src.indexOf("img/i2.png")>0) {
+          document.getElementById(id).src="img/i2red.png"
+        }
+        else {
+          document.getElementById(id).src="img/i2.png"
+        }
+      }
+    </script>
+
+<!-- FOOTER -->
+
+    <footer>
+      <div id="loca">
+        <p>Unknown</p>
+        <div id="line"></div>
+        <div id="dot"></div>
+        <h5>Unknown</h5><p id="l"> - Reported by this computer - <a href="#">Use precise location</a> - <a href="#">Learn more</a></p>
+      </div>
+      <div id="navi">
+        <p><a href="#">Help</a><a href="#">Send feedback</a><a href="#">Privacy</a><a href="#">Terms</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- twincaret@gmail.com -->
